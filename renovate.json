@@ -1,1 +1,18 @@
-
+{
+  "extends": ["config:base"],
+  "hostRules": [
+    {
+      "hostName": "https://artifactory.example.com/artifactory/api/pods/cocoa-public-github/",
+      "username": "dummy",
+      "password": "dummy"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["cocoapods"],
+      "registryUrls": [
+        "https://artifactory.example.com/artifactory/api/pods/cocoa-public-github/"
+      ]
+    }
+  ]
+}
